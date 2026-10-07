@@ -1,0 +1,21 @@
+{
+  "name": "folio-workbench",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "dompurify": "^3.2.0",
+    "lucide-react": "^0.468.0",
+    "marked": "^15.0.0",
+    "mermaid": "^11.17.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}

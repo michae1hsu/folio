@@ -1,0 +1,50 @@
+# Local configuration: only the blank template belongs in Git.
+.env
+.env.*
+!.env.example
+*.env
+*.env.*
+# Credentials can be stored anywhere locally, never in the repository.
+credentials/
+secrets/
+*service*account*.json
+*credentials*.json
+*secret*.json
+*token*.json
+*.pem
+*.key
+*.p12
+*.pfx
+# Explicitly safe structural example (all credential values are empty).
+!examples/google-service-account.example.json
+# Runtime and user data
+data/
+data-*/
+output/
+uploads/
+*.zip
+*.wav
+*.mp3
+*.mp4
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+*.log
+evaluation-examples.json
+# Dependencies and generated files
+.venv/
+.tools/
+venv/
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+.idea/
+.vscode/
+
+!.env.example

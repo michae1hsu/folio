@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+if [ -x .venv/bin/python ]; then py=.venv/bin/python
+elif [ -f .venv/Scripts/python.exe ]; then py=.venv/Scripts/python.exe
+else py=python
+fi
+"$py" scripts/check_secrets.py --commit-msg "$1"
+exec "$py" scripts/run_gitleaks.py --commit-msg "$1"

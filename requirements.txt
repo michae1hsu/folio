@@ -1,0 +1,16 @@
+# Direct dependencies verified by the offline suite; update deliberately with CI.
+fastapi==0.142.2
+uvicorn==0.54.0
+openai==3.24.0
+python-dotenv==1.2.4
+PyMuPDF==1.28.2
+Pillow==12.3.0
+playwright==1.63.0
+openpyxl==3.1.5
+httpx==0.28.1
+google-auth[requests]==2.59.1
+google-cloud-storage==3.16.0
+qdrant-client==1.19.1
+tiktoken==0.14.0
+jieba==0.42.1
+setuptools==83.0.0
